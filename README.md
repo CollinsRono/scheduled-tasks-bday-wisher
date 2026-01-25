@@ -113,12 +113,26 @@ Change the numbers to set your schedule:
 
 ---
 
-### Step 5: Test It!
+### Step 5: Test Your Setup
 
 1. Go to the **Actions** tab in your repository
+2. Click **"Test Setup"** in the left sidebar
+3. Click **"Run workflow"** → **"Run workflow"**
+
+This checks that:
+- Your secrets are configured
+- All required files exist
+- Your Python code has no syntax errors
+
+If everything passes, you're ready to go!
+
+### Step 6: Run Your Script
+
+Once the test passes, try running your actual script:
+
+1. Go to the **Actions** tab
 2. Click **"Daily Script"** in the left sidebar
-3. Click **"Run workflow"** button
-4. Click the green **"Run workflow"** button
+3. Click **"Run workflow"** → **"Run workflow"**
 
 Watch it run! Click on the job to see the output.
 
