@@ -7,8 +7,8 @@ import smtplib
 
 today = datetime.now()
 today_tuple = (today.month, today.day)
-my_email = os.environ.get("my_email")
-password = os.environ.get("password")
+MY_EMAIL = os.environ.get("my_email")
+PASSWORD = os.environ.get("password")
 
 data = pandas.read_csv("birthdays.csv")
 
@@ -23,7 +23,7 @@ if today_tuple in birthdays_dict:
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(my_email, password)
+        connection.login(MY_EMAIL, PASSWORD)
         connection.sendmail(from_addr=my_email,
                             to_addrs=birthday_person["email"],
                             msg=f"Subject: Happy Birthday\n\n {new_msg}")
