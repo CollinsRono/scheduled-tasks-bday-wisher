@@ -7,8 +7,8 @@ import smtplib
 
 today = datetime.now()
 today_tuple = (today.month, today.day)
-my_email = os.environ.get("MY_EMAIL")
-password = os.environ.get("MY_PASSWORD")
+my_email = os.environ.get("my_email")
+password = os.environ.get("password")
 
 data = pandas.read_csv("birthdays.csv")
 
