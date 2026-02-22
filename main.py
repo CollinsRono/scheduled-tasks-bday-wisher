@@ -9,8 +9,6 @@ today = datetime.now()
 today_tuple = (today.month, today.day)
 my_email = os.environ.get("MY_EMAIL")
 password = os.environ.get("MY_PASSWORD")
-my_email = "cole.udemy1@gmail.com"
-password = "rlsmpiotxccubxbw"
 
 data = pandas.read_csv("birthdays.csv")
 
